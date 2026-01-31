@@ -24,7 +24,7 @@ body {
     text-decoration: none;
     color: white;
     background-color: #059669;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border-radius: 7px;
 }
 .header-container {
@@ -55,9 +55,10 @@ body {
     text-decoration: none;
     color: #6b7280;
 }
+
 .logo-icon {
     color: #059669;
-    font-size: 30px;
+    font-size: 3rem;
 }
 /* Hero Section*/
 
@@ -126,13 +127,13 @@ body {
 
 .hero-btn-wrapper {
     display: flex;
-    gap: 15px;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .hero-image {
-    width: 500px;
-    height: 400px;
+    width: 50rem;
+    height: 40rem;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -287,6 +288,8 @@ body {
     font-size: 3.2rem;
     font-weight: 500;
     color: #fff;
+    line-height: 1.3;
+    max-width: 800px;
 }
 
 @media (max-width: 768px) {
@@ -297,6 +300,8 @@ body {
 
 .grocery-shopping p {
     color: #fff;
+    line-height: 1.6;
+    max-width: 700px;
 }
 .create-account-btn {
     display: inline-block;
@@ -331,4 +336,65 @@ body {
         align-items: center;
     }
     
+}
+@media (max-width: 480px) {
+    .logo-wrapper h3 {
+        font-size: 1.4rem;
+    }
+
+    .logo-icon {
+        font-size: 24px;
+    }
+
+    .hero-heading {
+        font-size: 2.2rem;
+    }
+
+    .hero-text-tag {
+        font-size: 1.2rem;
+    }
+    .hero-image {
+        height: 250px;
+    }
+
+    .how-it-works-title h3,
+    .everything-you-need-title h3 {
+        font-size: 2rem;
+    }
+
+    .how-it-works-card h4,
+    .everything-you-need-card h4 {
+        font-size: 1.8rem;
+    }
+
+    .grocery-shopping h3 {
+        font-size: 1.8rem;
+    }
+
+    .grocery-shopping {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .create-account-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .footer-content {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 580px) {
+    .grocery-shopping h3 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 480px) {
+    .hero-list {
+        font-size: 1.3rem;
+    }
+
+    .hero-list i {
+        font-size: 1.6rem;
+    }
 }
