@@ -8,11 +8,6 @@ html {
     font-size: 62.5%;
 }
 
-@media (max-width: 1280px) {
-    html {
-        font-size: 50%;
-    }
-}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -45,11 +40,6 @@ body {
     gap: 2rem;
 }
 
-@media (max-width: 700px) {
-    .nav-items {
-        display: none;
-    }
-}
 
 .nav-item a {
     text-decoration: none;
@@ -82,20 +72,6 @@ body {
     border-radius: 2rem;
 }
 
-@media (max-width: 400px) {
-    .hero-text-tag{
-        font-size: 1rem;
-    }
-}
-.hero-heading {
-    font-size: 5rem;
-}
-
-@media (max-width: 900px) {
-    .hero-heading {
-        font-size: 3rem;
-    }
-}
 
 .hero-paragraph {
     color: #4b5563;
@@ -138,21 +114,6 @@ body {
     border-radius: 10px;
 }
 
-@media (max-width: 900px) {
-    .hero-image {
-        width: 40rem;
-        height: 30rem;
-    }
-}
-
-@media (max-width: 740px) {
-    .hero-image-wrapper {
-        display: none;
-    }
-    .hero-content {
-        flex-basis: 100%;
-    }
-}
 
 /*How-It Works-Section*/
 .how-it-works {
@@ -179,11 +140,6 @@ body {
     margin-top: 4rem;
 }
 
-@media (max-width: 640px) {
-    .how-it-works-card-container {
-        flex-direction: column;
-    }
-}
 
 .how-it-works-card {
     background-color: #fff;
@@ -234,11 +190,6 @@ body {
     margin-top: 4rem;
 }
 
-@media (max-width: 640px) {
-    .everything-you-need-card-container {
-        flex-direction: column;
-    }
-}
 
 .everything-you-need-card {
     padding: 3rem;
@@ -278,12 +229,6 @@ body {
    border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .grocery-shopping {
-        flex-direction: column;
-    }
-}
-
 .grocery-shopping h3 {
     font-size: 3.2rem;
     font-weight: 500;
@@ -292,11 +237,6 @@ body {
     max-width: 800px;
 }
 
-@media (max-width: 768px) {
-    .grocery-shopping h3 {
-        font-size: 2.5rem;
-    }
-}
 
 .grocery-shopping p {
     color: #fff;
@@ -325,37 +265,77 @@ body {
 }
 
 .footer-content {
-    color: #6b7280;
+    color: #000;
     font-size: 1.5rem;
 }
- @media (max-width: 740px) {
-    .footer-contents {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+ 
+/* Large Desktop (1280px and below) */
+@media (max-width: 1280px) {
+    html {
+        font-size: 56%;
     }
-    
 }
 
-@media (max-width: 480px) {
-    .logo-wrapper h3 {
-        font-size: 1.5rem;
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+    html {
+        font-size: 54%;
     }
 
-    .logo-icon {
-        font-size: 24px;
+    .hero-container {
+        padding: 4rem 2rem;
+    }
+
+    .how-it-works,
+    .everything-you-need {
+        padding: 4rem 2rem;
+    }
+}
+
+/* Tablet Portrait (900px and below) */
+@media (max-width: 900px) {
+    html {
+        font-size: 52%;
+    }
+
+    .header-container {
+        padding: 1.5rem 2rem;
     }
 
     .hero-heading {
-        font-size: 2.8rem;
+        font-size: 4rem;
     }
 
-    .hero-text-tag {
-        font-size: 1.2rem;
-    }
     .hero-image {
-        height: 250px;
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+/* Large Mobile (768px and below) */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+
+    .hero-content {
+        flex-basis: 100%;
+    }
+
+    .hero-image-wrapper{
+        display: none;
+    }
+
+    .how-it-works-card-container,
+    .everything-you-need-card-container {
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .how-it-works-title h3,
@@ -363,14 +343,175 @@ body {
         font-size: 2.8rem;
     }
 
+    .footer-contents {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Medium Mobile (740px and below) */
+@media (max-width: 740px) {
+    .hero-image-wrapper {
+        display: none;
+    }
+
+    .hero-heading {
+        font-size: 3.2rem;
+    }
+}
+
+/* Navigation Hidden (700px and below) */
+@media (max-width: 700px) {
+    .nav-items {
+        display: none;
+    }
+
+    .header-container {
+        padding: 1.5rem;
+    }
+    
+}
+
+/* Small Mobile (640px and below) */
+@media (max-width: 640px) {
+    .hero-container {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .hero-lists {
+        gap: 0.8rem;
+        font-size: 1.4rem;
+    }
+
+    .hero-list i {
+        font-size: 1.8rem;
+        margin-top: 1px;
+    }
+
+    .hero-btn-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .hero-btn-wrapper a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .how-it-works,
+    .everything-you-need {
+        padding: 3rem 1.5rem;
+    }
+
+    .how-it-works-title h3,
+    .everything-you-need-title h3 {
+        font-size: 2.8rem;
+    }
+
+    .how-it-works-card,
+    .everything-you-need-card {
+        padding: 2.5rem;
+    }
+
+    .footer-container {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* Extra Small Mobile (520px and below) */
+@media (max-width: 520px) {
+    .hero-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-heading {
+        font-size: 2.6rem;
+    }
+
+    .hero-text-tag {
+        font-size: 1.2rem;
+    }
+    .hero-paragraph {
+        font-size: 2rem;
+    }
+
+    .hero-lists {
+        font-size: 1.8rem;
+    }
+
+    .how-it-works,
+    .everything-you-need {
+        padding: 2.5rem 1rem;
+    }
+
+    .how-it-works-title h3,
+    .everything-you-need-title h3 {
+        font-size: 2.5rem;
+    }
+
+    .how-it-works-card,
+    .everything-you-need-card {
+        padding: 2rem;
+    }
+
+    .footer-container {
+        padding: 2.5rem 1rem;
+    }
+}
+
+/* Very Small Mobile (480px and below) */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 1.2rem;
+    }
+
+    .logo-wrapper h3 {
+        font-size: 1.6rem;
+    }
+
+    .logo-icon {
+        font-size: 2.5rem;
+    }
+
+    .hero-container {
+        padding: 2rem 1rem;
+    }
+
+    .hero-heading {
+        font-size: 2.4rem;
+    }
+
+    .hero-paragraph {
+        font-size: 1.8rem;
+    }
+
+    .hero-lists {
+        font-size: 1.4rem;
+    }
+
+    .hero-list i {
+        font-size: 1.6rem;
+    }
+
+    .how-it-works-title h3,
+    .everything-you-need-title h3 {
+        font-size: 2.5rem;
+    }
+
     .how-it-works-card h4,
     .everything-you-need-card h4 {
         font-size: 1.8rem;
     }
 
-    .create-account-btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 1.4rem;
+    .how-it-works-card,
+    .everything-you-need-card {
+        padding: 1.8rem;
     }
 
     .footer-content {
@@ -378,33 +519,218 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .hero-list {
+/* Tiny Mobile (420px and below) */
+@media (max-width: 420px) {
+    .hero-heading {
+        font-size: 2.2rem;
+    }
+
+    .hero-text-tag {
+        font-size: 1.1rem;
+    }
+
+    .primary-btn,
+    .outlined-btn {
+        padding: 0.9rem 1.3rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Ultra Small Mobile (400px and below) */
+@media (max-width: 400px) {
+    .hero-text-tag {
+        font-size: 1rem;
+        padding: 2px 0.8rem;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-paragraph {
+        font-size: 1.4rem;
+    }
+
+    .hero-lists {
         font-size: 1.3rem;
     }
 
     .hero-list i {
-        font-size: 1.6rem;
-    }
-}
-/* From 680px down - keep h3 on one line */
-@media (max-width: 680px) {
-    .grocery-shopping-container {
-        padding: 3.5rem 1.5rem;
-    }
-
-    .grocery-shopping {
-        padding: 3.5rem 2.5rem;
-    }
-
-    .grocery-shopping h3 {
-        font-size: 2.4rem;
-    }
-
-    .grocery-shopping p {
         font-size: 1.4rem;
     }
+
+    .how-it-works-card,
+    .everything-you-need-card {
+        padding: 1.5rem;
+    }
 }
+
+/* Extra Tiny Mobile (360px and below) */
+@media (max-width: 360px) {
+    .logo-wrapper h3 {
+        font-size: 1.4rem;
+    }
+
+    .hero-container {
+        padding: 1.8rem 0.8rem;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-paragraph {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .hero-lists {
+        font-size: 1.2rem;
+    }
+
+    .hero-list i {
+        font-size: 1.3rem;
+    }
+
+    .how-it-works,
+    .everything-you-need {
+        padding: 2rem 0.8rem;
+    }
+
+    .how-it-works-title h3,
+    .everything-you-need-title h3 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+        padding: 0 0.5rem;
+    }
+
+    .how-it-works-title p,
+    .everything-you-need-title p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 0 0.5rem;
+    }
+
+    .how-it-works-card,
+    .everything-you-need-card {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .how-it-works-card h4,
+    .everything-you-need-card h4 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .how-it-works-card p,
+    .everything-you-need-card p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .footer-container {
+        padding: 2rem 0.8rem;
+    }
+
+    .footer-contents {
+        flex-direction: column;
+        gap: 1.2rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        word-wrap: break-word;
+    }
+
+    .footer-content i {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ultra Tiny Mobile (320px and below) */
+@media (max-width: 320px) {
+    .logo-wrapper h3 {
+        font-size: 1.3rem;
+    }
+
+    .logo-icon {
+        font-size: 2rem;
+    }
+
+    .hero-container {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .hero-heading {
+        font-size: 1.7rem;
+    }
+
+    .hero-text-tag {
+        font-size: 0.9rem;
+    }
+
+    .how-it-works-title h3,
+    .everything-you-need-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .how-it-works-title p,
+    .everything-you-need-title p {
+        font-size: 1.1rem;
+    }
+
+    .how-it-works-card h4,
+    .everything-you-need-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .how-it-works-card p,
+    .everything-you-need-card p {
+        font-size: 1.2rem;
+    }
+
+    .how-it-works-card,
+    .everything-you-need-card {
+        padding: 1.2rem 1rem;
+    }
+
+    .primary-btn,
+    .outlined-btn {
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-container {
+        padding: 2rem 0.5rem;
+    }
+
+    .footer-contents {
+        gap: 1rem;
+    }
+
+    .footer-content {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    .footer-content i {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+
+    .how-it-works,
+    .everything-you-need {
+        padding: 4rem 2rem;
+    }
+}
+
 /* Mobile (640px and below) */
 @media (max-width: 640px) {
     .grocery-shopping-container {
